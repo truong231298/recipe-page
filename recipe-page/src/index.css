@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "young-serif";
+    src: url(./assets/young-serif/YoungSerif-Regular.ttf);
+}
+
+* {
+    font-family: "young-serif";
+}
+ol, ul{
+    margin-left: 1rem;
+    
+}
+li{
+    margin-bottom: 4px;
+    
+}
+li::marker{
+    color: rgb(230, 112, 112);
+}
+
+@layer base {
+
+    ul,
+    ol {
+        list-style: revert;
+    }
+}
